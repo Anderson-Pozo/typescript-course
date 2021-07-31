@@ -1,7 +1,7 @@
 
 // Datos primitivos
 // number, string, boolean, bigint, void, null y undefined
-// const age: number = 10;
+const age: number = 10;
 
 const message: string = `Hello I´m ${ age.toString() }`;
 
