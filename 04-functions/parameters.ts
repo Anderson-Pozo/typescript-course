@@ -1,28 +1,32 @@
-function addNumbers(x: number, y: number): number {
+function addNumbersY(x: number, y: number): number {
     return x + y;
 }
 
-addNumbers(1, 2); // Returns 3
-addNumbers(1);    // Returns an error
+addNumbersY(1, 2); // Returns 3
+// addNumbersY(1);    // Returns an error
 
 
 // Parametros opcionales
-function addNumbers(x: number, y?: number): number {
-    let total: number = x + y;
-    return total;
+function addNumbersZ(x: number, y?: number): number {
+    if (y === undefined){
+        return x;
+    }else{
+        let total: number = x + y;
+        return total;
+    }
 }
 
-addNumbers(1, 2); // Returns 3
-addNumbers(1);    // Returns 1
+addNumbersZ(1, 2); // Returns 3
+addNumbersZ(1);    // Returns 1
 
 
 // Parametros predeterminados
-function addNumbers(x: number, y: number = 25): number {
+function addNumbersA(x: number, y: number = 25): number {
     return x + y;
 }
 
-addNumbers(1, 2);  // Returns 3
-addNumbers(1);     // Returns 26
+addNumbersA(1, 2);  // Returns 3
+addNumbersA(1);     // Returns 26
 
 
 // Parametros REST

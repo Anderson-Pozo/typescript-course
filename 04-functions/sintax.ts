@@ -1,9 +1,9 @@
 // Funciones con nombres
-function addNumbers(x: number, y: number): number {
+function addNumbersX(x: number, y: number): number {
     return x + y;
 }
 
-addNumbers(1, 2);
+addNumbersX(1, 2);
 
 // funciones anonimas
 let addNumbers2 = function (x: number, y: number): number {
